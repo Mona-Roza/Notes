@@ -1,66 +1,64 @@
-### Getting Started
-   In this section we'll talk about the key parts, commands and packages when we using server. If you have any idea or feedback about my notes and you can type in issues, you'll help me and the other learners. 
+### Başlarken
+   Bu bölümde server kullanırken ihtiyaç duyabileceğimiz püf noktalar, komut satırları ve uygulamalar hakkında konuşacağız. Görüş ve geri bildirimlerinizi  issues kısmından bildirirseniz, bana ve öğrenmek isteyenlere yardımcı olabilirsiniz.
 
+### AWS Hizmeti İle Instance Oluşturma
+Bu hizmeti kullanabilmek için öncelikle AWS konsolunuza giriş yapmalısınız. 
 
-### Create Instance with AWS
-If you want to use this service, you should log in your AWS console.
-
-After logging in your console you should follow these tab parts:
+Konsolunuza giriş yaptıktan sonra **Services** sekmesinin altından **Compute** sekmesine ve Compute sekmesi altından **EC2** sekmesine giriyoruz. Bu sekmenin içerisinden **Launch instance** sekmesine geçiş yapıyoruz. Yani yolumuz şu şekilde:
 > Services->Compute->EC2->Launch instance
 
-In this tab, you can create a new instance/machine. We are using **Ubuntu 18.4**. So what we will talk about in the other sections will be explained through this version of ubuntu. After this explanation we can flow directions:
+Artık bu sekme üzerinden kendimize bir instance yani bir makine oluşturabiliriz.  Burada oluşturulması gösterilen makine **Ubuntu 18.4** içermekte ve ilerleyen safhalarda Ubuntu'nun bu sürümüne yönelik yönergeler yer almaktadır. Şimdi aşağıdaki adımları izleyelim:
 
-**!** This directions explains AWS free services. If you need different system requirements, you can change your system elements except the operating system.
+**!** Buradaki adımlar, AWS'nin ücretsiz sağladığı hizmetler çerçevesinde şekillenmiştir.  İşletim sistemi dışındaki seçenekler ihtiyaca göre şekillendirilebilir.
 
-1. Firstly choose name for your server:
+1. Öncelikle isimlendirmemizi yapıyoruz:
 
 [![](https://github.com/Mona-Roza/Notes/blob/main/About%20Server%20%26%20About%20Linux/images/names_and_tags.png)](https://github.com/Mona-Roza/Notes/blob/main/About%20Server%20%26%20About%20Linux/images/names_and_tags.png)
 
-2. Choose your machine's operating system like that:
+
+2.  Makinemizin işletim sistemini seçiyoruz:
 
 [![](https://github.com/Mona-Roza/Notes/blob/main/About%20Server%20%26%20About%20Linux/images/machine_image.png)](https://github.com/Mona-Roza/Notes/blob/main/About%20Server%20%26%20About%20Linux/images/machine_image.png)
 
 
-3. Choose your instance type like that:
+3. Instance typemızı seçiyoruz:
 
 [![](https://github.com/Mona-Roza/Notes/blob/main/About%20Server%20%26%20About%20Linux/images/instance_type.png)](https://github.com/Mona-Roza/Notes/blob/main/About%20Server%20%26%20About%20Linux/images/instance_type.png)
 
- 
-4. We need a key pair because of we can't create password for root user when we are creating our server:
+
+4. AWS üzerinde root kullanıcımız için direkt şifre oluşturamıyoruz, bu nedenle makinemize bağlabilmek için bir key pair almamız gerekiyor:
 
 
 [![](https://github.com/Mona-Roza/Notes/blob/main/About%20Server%20%26%20About%20Linux/images/key_pair.png)](https://github.com/Mona-Roza/Notes/blob/main/About%20Server%20%26%20About%20Linux/images/key_pair.png)
 
 
-5. When you creating your key pair, you should be careful about your key's extension. Because you need your_key.pem file. But if you didn't create your key with .pem extension, don't worry about that. Because, I will explain the converting your key file to .pem from .ppk in the other section.
+5. Key pairi oluştururken dikkat etmemiz gereken noktalardan bir tanesi .pem uzantılı şekilde oluşturmaktır. Eğer key pairinizi .pem uzantılı oluşturmadıysanız bir sonraki bölümde .ppk uzantısından .pem uzantısına dönüşüm için gerekli adımlar belirtilecektir.
 
 [![](https://github.com/Mona-Roza/Notes/blob/main/About%20Server%20%26%20About%20Linux/images/create_key_pair.png)](https://github.com/Mona-Roza/Notes/blob/main/About%20Server%20%26%20About%20Linux/images/create_key_pair.png)
 
 
-6. If your Summary part like that, we can launch our instance:
+6. Eğer Summary bölümünüz aşağıda bulunan resimdeki gibiyse artık instancemizi başlatabiliriz:
 
 [![](https://github.com/Mona-Roza/Notes/blob/main/About%20Server%20%26%20About%20Linux/images/launch_instance.png)](https://github.com/Mona-Roza/Notes/blob/main/About%20Server%20%26%20About%20Linux/images/launch_instance.png)
 
+#### PuTTy ile key pair dönüştürme:
+Aşağıdaki adımları izleyerek .pem uzantılı key pairimizi .ppk uzantılı hale çevireceğiz. Bu adımlara geçmeden  önce PuTTy edinmeniz gerekmektedir:
 
-#### Converting key pair using PuTTy:
-In this section we'll convert our key with .pem extension to key with .ppk extension. But before go on the section, you need PuTTy application. So you should install PuTTy.
-
-
-1. Start PuTTygen.
+1. PuTTygen'e giriş yapalım
 
 
-2. Open your file with .pem extension with using Load button. After that, you can click Generate button.
+2. Load sekmesi ile AWS'den edindiğimiz .pem uzantılı keyimizi açıyoruz ve generate işlemi ile .ppk uzantılı dosyaya çeviriyoruz:
 
 [![](https://github.com/Mona-Roza/Notes/blob/main/About%20Server%20%26%20About%20Linux/images/convert_key.png)](https://github.com/Mona-Roza/Notes/blob/main/About%20Server%20%26%20About%20Linux/images/convert_key.png)
 
 
-3. Save public key with Save button. But don't forget where you save.
+3. Save public key diyerek keyimizi bildiğimiz bir konuma kaydedelim.
 
-#### Connect with PuTTy:
-In this section we'll access our server with our key pair, remove with accessing key pair, allow accessing with password and create a password for root:
+#### PuTTy ile bağlanma:
+Aşağıdaki adımları izleyerek .ppk uzantılı keyimizi kullanarak serverimize gireceğiz, key ile login işlemini kaldıracağız ve password ile logine izin vereceğiz ardından root için şifre oluşturacağız:
 
 
-1.  Your ip here: 
+1.  Ip adresimizi bu bölüme yazalım:
 
 [![](https://github.com/Mona-Roza/Notes/blob/main/About%20Server%20%26%20About%20Linux/images/ip_address.png)](https://github.com/Mona-Roza/Notes/blob/main/About%20Server%20%26%20About%20Linux/images/ip_address.png)
 
