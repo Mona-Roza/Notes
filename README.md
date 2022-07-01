@@ -2,4 +2,3 @@
 
 ##### This repo contains my learning notes.
 
-deneneme
