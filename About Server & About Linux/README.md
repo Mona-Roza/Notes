@@ -4,7 +4,7 @@
 ### AWS Hizmeti İle Instance Oluşturma
 Bu hizmeti kullanabilmek için öncelikle AWS konsolunuza giriş yapmalısınız. 
 
-Konsolunuza giriş yaptıktan sonra **Services** sekmesinin altından** Compute** sekmesine ve Compute sekmesi altından **EC2** sekmesine giriyoruz. Bu sekmenin içerisinden **Launch instance** sekmesine geçiş yapıyoruz. Yani yolumuz şu şekilde:
+Konsolunuza giriş yaptıktan sonra **Services** sekmesinin altından **Compute** sekmesine ve Compute sekmesi altından **EC2** sekmesine giriyoruz. Bu sekmenin içerisinden **Launch instance** sekmesine geçiş yapıyoruz. Yani yolumuz şu şekilde:
 > Services->Compute->EC2->Launch instance
 
 Artık bu sekme üzerinden kendimize bir instance yani bir makine oluşturabiliriz.  Burada oluşturulması gösterilen makine **Ubuntu 18.4** içermekte ve ilerleyen safhalarda Ubuntu'nun bu sürümüne yönelik yönergeler yer almaktadır. Şimdi aşağıdaki adımları izleyelim:
@@ -63,7 +63,7 @@ Aşağıdaki adımları izleyerek .ppk uzantılı keyimizi kullanarak serverimiz
 [![](https://github.com/Mona-Roza/Notes/blob/main/About%20Server%20%26%20About%20Linux/images/ip_address.png)](https://github.com/Mona-Roza/Notes/blob/main/About%20Server%20%26%20About%20Linux/images/ip_address.png)
 
 
-2.  **Connection/SSH/Auth ** sekmesine geçiş yapalım ve keyimizi indirdiğimiz konumu seçelim ardından open ile onaylayalım:
+2.  **Connection/SSH/Auth** sekmesine geçiş yapalım ve keyimizi indirdiğimiz konumu seçelim ardından open ile onaylayalım:
 
 [![](https://github.com/Mona-Roza/Notes/blob/main/About%20Server%20%26%20About%20Linux/images/select_key_file.png)](https://github.com/Mona-Roza/Notes/blob/main/About%20Server%20%26%20About%20Linux/images/select_key_file.png)
 
