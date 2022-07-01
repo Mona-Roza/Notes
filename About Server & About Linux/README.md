@@ -106,4 +106,4 @@ komutlarınan  bir tanesiyle shh hizmetimizi yeniden başlatıyoruz.
 12. Bu komutla user-name adlı kullanıcıya şifre belirleyelim:
 `sudo passwd user-name`
 
-Bu adımlar ile şifre ile erişim için makinemizin ayarlarını düzenledik. Artık Windows için herhangi bir SSH clienti kullanarak, Mac veya Linux için kendi konsolunuza  ssh root@ip-adsress yazarak bağlantı kurabilirsiniz. 
+Bu adımlar ile şifre ile erişim için makinemizin ayarlarını düzenledik. Artık Windows için herhangi bir SSH clienti kullanarak, Mac veya Linux için kendi konsolunuza  `ssh root@ip-adsress` yazarak bağlantı kurabilirsiniz. 
