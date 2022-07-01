@@ -32,7 +32,7 @@ In this tab, you can create a new instance/machine. We are using **Ubuntu 18.4**
 [![](https://github.com/Mona-Roza/Notes/blob/main/About%20Server%20%26%20About%20Linux/images/key_pair.png)](https://github.com/Mona-Roza/Notes/blob/main/About%20Server%20%26%20About%20Linux/images/key_pair.png)
 
 
-5. When you creating your key pair, you should be careful about your key's extension. Because you need your_key.pem file. But if you didn't create your key with .pem extension, don't worry about that. Because, I will explain converting your key file to .pem from .ppk in the other section.
+5. When you creating your key pair, you should be careful about your key's extension. Because you need your_key.pem file. But if you haven't created your key with .pem extension, wouldn't be worry about that. Because, I will explain converting your key file to .pem from .ppk in the other section.
 
 [![](https://github.com/Mona-Roza/Notes/blob/main/About%20Server%20%26%20About%20Linux/images/create_key_pair.png)](https://github.com/Mona-Roza/Notes/blob/main/About%20Server%20%26%20About%20Linux/images/create_key_pair.png)
 
