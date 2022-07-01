@@ -10,7 +10,7 @@ After logging in your console you should follow these tab parts:
 
 In this tab, you can create a new instance/machine. We are using **Ubuntu 18.4**. So what we will talk about in the other sections will be explained through this version of ubuntu. After this explanation we can flow directions:
 
-**!** This directions explains AWS free services. If you need different system requirements, you can change your system elements except the operating system.
+**!** This directions explain AWS free services. If you need different system requirements, you can change your system elements except the operating system.
 
 1. Firstly choose name for your server:
 
