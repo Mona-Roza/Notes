@@ -66,6 +66,7 @@ In this section we'll access our server with our key pair, remove with accessing
 
 
 2. Follow **Connection/SSH/Auth** path and browse directory where you saved your key. And after that Click open button.
+
 [![](https://github.com/Mona-Roza/Notes/blob/main/About%20Server%20%26%20About%20Linux/images/select_key_file.png)](https://github.com/Mona-Roza/Notes/blob/main/About%20Server%20%26%20About%20Linux/images/select_key_file.png)
 
 
