@@ -1,5 +1,5 @@
 ### Getting Started
-   In this section we'll talk about the key parts, commands and packages when we using server. If you have any idea or feedback about my notes and you can type in issues, you'll help me and the other learners. 
+   In this section we'll talk about the key pairs, commands and packages when we using server. If you have any idea or feedback about my notes and you can type in issues, you'll help me and the other learners. 
 
 
 ### Create Instance with AWS
