@@ -65,47 +65,44 @@ In this section we'll access our server with our key pair, remove with accessing
 [![](https://github.com/Mona-Roza/Notes/blob/main/About%20Server%20%26%20About%20Linux/images/ip_address.png)](https://github.com/Mona-Roza/Notes/blob/main/About%20Server%20%26%20About%20Linux/images/ip_address.png)
 
 
-2.  **Connection/SSH/Auth** sekmesine geçiş yapalım ve keyimizi indirdiğimiz konumu seçelim ardından open ile onaylayalım:
-
+2. Follow **Connection/SSH/Auth** path and browse directory where you saved your key. And after that Click open button.
 [![](https://github.com/Mona-Roza/Notes/blob/main/About%20Server%20%26%20About%20Linux/images/select_key_file.png)](https://github.com/Mona-Roza/Notes/blob/main/About%20Server%20%26%20About%20Linux/images/select_key_file.png)
 
 
-3.  Açılan terminalde aşağıdaki gibi devam edelim:
+3. You should login as ubuntu where opened command line window:
 `login as: ubuntu`
 
-4.  `sudo nano /etc/ssh/sshd_config  `
-komutu ile ssh_config dosyasını düzenleme işlemini başlatalım.
 
-5.  Düzenlemeye açılan sshd_config dosyasının 
-`PasswordAuthentication yes`
-haline getirelim. 
-Ardından boş herhangi bir satıra :
-`PermitRootLogin yes`
-izinini ekleyelim.
+4. Start editing ssh_config file with `sudo nano /etc/ssh/sshd_config  ` command.
 
-6. Ctrl + X ile düzenleme işlemini kaydedelim.
 
-7.  Aşağıdaki komut ile root için şifre oluşturalım:
-`sudo passwd root`
+5. Find `PasswordAuthentication` permission and change the value to yes. After that append this  permission : `PermitRootLogin yes` 
 
-8.  İzinleri değiştirdiğimiz için 
-`sudo service sshd restart  `
-veya 
-`sudo systemctl restart sshd`
-komutlarınan  bir tanesiyle shh hizmetimizi yeniden başlatıyoruz.
 
-9. Aşağıdaki komutla sistem güncellemelerini indirelim. Ayriyetten bu işlemi her giriş yaptığımızda yapmaya çalışalım:
-`sudo apt update && sudo apt upgrade -y`
+6. Close and save editing the file with CTRL + X shortcut.
 
-**!** Buradan sonraki adımlara, kullanıcı eklemek isterseniz devam edebilirsiniz.
 
-10. Aşağıdaki komutla user-name isimli bir user oluşturalım. 
-`sudo adduser user-name`
+7. Create password for root with this command: `sudo passwd root`
 
-11. Aşağıdaki komutla isterseniz ilgili kullanıcıya root yetkilerini kullanmasına izin verebilirsiniz:
-`sudo usermod -aG sudo user-name`
 
-12. Bu komutla user-name adlı kullanıcıya şifre belirleyelim:
-`sudo passwd user-name`
+8. We changed permissions so we have to restart sshd service. Use `sudo service sshd restart` or `sudo systemctl restart sshd` command.
 
-Bu adımlar ile şifre ile erişim için makinemizin ayarlarını düzenledik. Artık Windows için herhangi bir SSH clienti kullanarak, Mac veya Linux için kendi konsolunuza  `ssh root@ip-adsress` yazarak bağlantı kurabilirsiniz. 
+
+9. Update your system with this command: `sudo apt update && sudo apt upgrade -y`
+Also run this command whenever you log in your server.
+
+
+**!** If you want to add user, you can follow next steps.
+
+
+10. Create a user with `sudo adduser user-name` command.
+
+
+11. You can change this user's permissons with `sudo usermod -aG sudo user-name` command. This command gives root permissons to your user. 
+
+
+12. You can create a password for your user with `sudo passwd user-name` command.
+
+
+With this directions we edited our machine's permissions for accessing with password. After that we can access our server with using any SSH client for Windows machine or with using `ssh root@ip-adsress` command in your machine's command line for Mac or Linux machine.
+

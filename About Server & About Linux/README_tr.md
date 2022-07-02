@@ -90,7 +90,7 @@ izinini ekleyelim.
 `sudo service sshd restart  `
 veya 
 `sudo systemctl restart sshd`
-komutlarınan  bir tanesiyle shh hizmetimizi yeniden başlatıyoruz.
+komutlarınan  bir tanesiyle sshd hizmetimizi yeniden başlatıyoruz.
 
 9. Aşağıdaki komutla sistem güncellemelerini indirelim. Ayriyetten bu işlemi her giriş yaptığımızda yapmaya çalışalım:
 `sudo apt update && sudo apt upgrade -y`
