@@ -1,5 +1,5 @@
 ### Getting Started
-   In this section we'll talk about the key pairs, commands and packages when we using server. If you have any idea or feedback about my notes and you can type in issues, you'll help me and the other learners. 
+   In this section we'll talk about the key pairs, commands and packages when we using server. If you have any ideas or feedbacks about my notes, you can type in issues, you'll help me and the other learners. 
 
 
 ### Create Instance with AWS
@@ -26,7 +26,7 @@ In this tab, you can create a new instance/machine. We are using **Ubuntu 18.4**
 [![](https://github.com/Mona-Roza/Notes/blob/main/About%20Server%20%26%20About%20Linux/images/instance_type.png)](https://github.com/Mona-Roza/Notes/blob/main/About%20Server%20%26%20About%20Linux/images/instance_type.png)
 
  
-4. We need a key pair because of we can't create password for root user when we are creating our server:
+4. We need a key pair because we can't create password for root user when we are creating our server:
 
 
 [![](https://github.com/Mona-Roza/Notes/blob/main/About%20Server%20%26%20About%20Linux/images/key_pair.png)](https://github.com/Mona-Roza/Notes/blob/main/About%20Server%20%26%20About%20Linux/images/key_pair.png)
