@@ -102,8 +102,8 @@ Also run this command whenever you log in your server.
 11. You can change this user's permissons with `sudo usermod -aG sudo user-name` command. This command gives root permissons to your user. 
 
 
-12. You can create a password for your user with `sudo passwd user-name` command.
+12. You can change a password for your user with `sudo passwd user-name` command.
 
 
-With this directions we edited our machine's permissions for accessing with password. After that we can access our server with using any SSH client for Windows machine or with using `ssh root@ip-adsress` command in your machine's command line for Mac or Linux machine.
+With this directions we edited our machine's permissions for accessing with password. After that we can access our server with using any SSH client for Windows machine or with using `ssh root@ip-address` command in your machine's command line for Mac or Linux machine.
 
