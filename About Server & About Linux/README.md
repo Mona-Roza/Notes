@@ -1,5 +1,5 @@
 ### Getting Started
-   In this section we'll talk about the key pairs, commands and packages when we using server. If you have any ideas or feedbacks about my notes, you can type in issues, you'll help me and the other learners. 
+   In this section we'll talk about the key pairs, commands and packages when we are using server. If you have any ideas or feedbacks about my notes, you can type in issues, you'll help me and the other learners. 
 
 
 ### Create Instance with AWS
@@ -102,7 +102,7 @@ Also run this command whenever you log in your server.
 11. You can change this user's permissons with `sudo usermod -aG sudo user-name` command. This command gives root permissons to your user. 
 
 
-12. You can change a password for your user with `sudo passwd user-name` command.
+12. You can change password for your user with `sudo passwd user-name` command.
 
 
 With this directions we edited our machine's permissions for accessing with password. After that we can access our server with using any SSH client for Windows machine or with using `ssh root@ip-address` command in your machine's command line for Mac or Linux machine.
