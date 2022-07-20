@@ -107,3 +107,12 @@ Also run this command whenever you log in your server.
 
 With this directions we edited our machine's permissions for accessing with password. After that we can access our server with using any SSH client for Windows machine or with using `ssh root@ip-address` command in your machine's command line for Mac or Linux machine.
 
+### Some Commands on Linux: 
+
+|**Command**   | **Description**  |  
+|---|---|
+|apt remove package_name      | Deletes package_name package  |  
+|apt purge package_name    | Deletes the residual files of the package named package_name  |  
+| sudo ufv status  |  Checks if the firewall is active |  
+| sudo ufw allow port_number | firewall allows port named port_number |
+| | |
