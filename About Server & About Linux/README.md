@@ -120,7 +120,7 @@ With this directions we edited our machine's permissions for accessing with pass
 | touch file_name | Creates file_name file |
 | cp file1.extension file2.extension | Overwrites file1 with file2. file1 is preserved |
 | mv file1.extension file2.extension | Overwrites file1 with file2. file1 is not preserved |
-| screen | Openes a screen. You can exit screen with CTRL+A+D shortcut (But your screen isn't killed|
+| screen | Openes a screen. You can exit screen with CTRL+A+D shortcut (But your screen isn't killed) |
 | screen -ls | Lists open screens |
 | screen -r screen_number | Opens screen_number screen |
 | CTRL + A and then pres K | Kills the open screen | 
