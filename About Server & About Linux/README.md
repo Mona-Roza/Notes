@@ -114,5 +114,15 @@ With this directions we edited our machine's permissions for accessing with pass
 |apt remove package_name      | Deletes package_name package  |  
 |apt purge package_name    | Deletes the residual files of the package named package_name  |  
 | sudo ufv status  |  Checks if the firewall is active |  
-| sudo ufw allow port_number | firewall allows port named port_number |
-| | |
+| sudo ufw allow port_number | Firewall allows port named port_number |
+| sudo ufw enable/disable | Activate/deactivate the firewall |
+| mkdir folder_name | Creates folder_name folder |
+| touch file_name | Creates file_name file |
+| cp file1.extension file2.extension | Overwrites file1 with file2. file1 is preserved |
+| mv file1.extension file2.extension | Overwrites file1 with file2. file1 is not preserved |
+| screen | Openes a screen. You can exit screen with CTRL+A+D shortcut (But your screen isn't killed|
+| screen -ls | Lists open screens |
+| screen -r screen_number | Opens screen_number screen |
+| CTRL + A and then pres K | Kills the open screen | 
+| zip -r file_name.zip * | Zip all files in the folder it is in |
+| unzip file_name.zip | Exports file_name.zip |
