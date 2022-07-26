@@ -126,4 +126,5 @@ With this directions we edited our machine's permissions for accessing with pass
 | CTRL + A and then pres K | Kills the open screen | 
 | zip -r file_name.zip * | Zip all files in the folder it is in |
 | unzip file_name.zip | Exports file_name.zip |
-| top | Monitorizes all processes and process numbers, if you want to monitorize your ram usage, you can press f in this screen after that select MEM with arrow keys, save with s key and turn back with q key |
+| top | Monitorizes all processes and process numbers, if you want to monitorize your ram usage, you can press `F` in this screen after that select MEM with arrow keys, save with `S` key and turn back with `Q` key. |
+| kill -9  process_number| Terminates process with its process_number |
